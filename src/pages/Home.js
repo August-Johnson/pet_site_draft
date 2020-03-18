@@ -4,6 +4,7 @@ import Header from "../components/Header";
 function HomePage() {
     return (
         <div>
+            {/*Hello*/}
             <Header />
 
             <div className="storeInfo">
