@@ -1,0 +1,19 @@
+.headerContainer {
+    text-align: center;
+}
+
+img.storeImage {
+    width: 90%;
+    height: 400px;
+    padding: 0 5%;
+}
+
+h1.storeName {
+    font-size: 250%;
+    padding-top: 25px;
+    margin-bottom: 0px;
+}
+
+h2.storeSlogan {
+    font-size: 150%;
+}

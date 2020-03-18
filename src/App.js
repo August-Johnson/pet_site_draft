@@ -1,15 +1,23 @@
 import React from 'react';
-// import logo from './logo.svg';
-// import './App.css';
-// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import './App.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import HomePage from "./pages/Home";
+import Container from "./components/Container";
 import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello</h1>
+    <Container>
+
+      <Router>
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+        </Switch>
+      </Router>
+
       <Footer />
-    </div>
+
+    </Container>
   );
 }
 
