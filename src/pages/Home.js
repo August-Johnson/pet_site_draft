@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
+import GoogleMaps from "../components/GoogleMaps";
 
 function HomePage() {
     return (
@@ -13,9 +14,9 @@ function HomePage() {
 
                 <div className="infoSection">
                     <h3>ADRESS</h3>
-                    <p>*Store name*</p>
-                    <p>*Store address*</p>
-                    <p>*City*, *State* *Zipcode*</p>
+                    <p>1236 East 66th Street</p>
+                    <p>Richfield, MN 55423</p>
+                    <p>United States</p>
                 </div>
 
                 <div className="infoSection">
@@ -26,7 +27,19 @@ function HomePage() {
 
                 <div className="infoSection">
                     <h3>PHONE</h3>
-                    <p>*Phone number*</p>
+                    <p>(952)-652-5121</p>
+                </div>
+
+                <div className="infoSection mapBox">
+                    <GoogleMaps />
+
+                    <br />
+
+                    <a href="https://www.google.com/maps/place/Egyptian+Parrot+Petshop/@44.8839625,-93.2632908,17z/data=!4m5!3m4!1s0x87f62996cb551d5d:0xd48cb85ff7c46c5a!8m2!3d44.8839701!4d-93.2569286" rel="noopener noreferrer" target="_blank">
+                        <button className="mapButton">
+                            Open Google Maps
+                        </button>
+                    </a>
                 </div>
 
             </div>
